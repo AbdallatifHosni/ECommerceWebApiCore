@@ -6,7 +6,7 @@
         public string ProductName { get; set; }
         public string Address { get; set; }
         public string QuantityPerUnit { get; set; }
-        public string ProductDescription { get; set; }
+        public string Description { get; set; }
         public string ReorderLevel { get; set; }
         public byte[] Picture { get; set; }
         public decimal Discount { get; set; }

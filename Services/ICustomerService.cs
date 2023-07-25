@@ -1,14 +1,15 @@
 ﻿using E_Commerce.Models;
+using E_Commerce.DTO;
 
 namespace E_Commerce.Services
 {
     public interface ICustomerService
     {
-        Task GetAll();
-        Task GetById(int id);
-        Task GetByName(string name);
-        Task Insert(Customer customer);
-        Task Update(int id, Customer customer);
-        Task DeleteById(int id);
+        Task<IList<Customer>> GetAll();
+        Task<Customer> GetById(int id);
+        Task<Customer> GetByName(string name);
+        Task<int> Insert(CustomerDto customer);
+        Task<int> Update(int id, CustomerDto customer);
+        Task<int> DeleteById(int id);
     }
 }

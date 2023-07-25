@@ -43,7 +43,7 @@ namespace E_Commerce.Services
             {
                 ProductID = dto.ProductID,
                 ProductName = dto.ProductName,
-                ProductDescription = dto.ProductDescription
+                ProductDescription = dto.Description
             };
             _context.Products.Add(product);
              var raw= await _context.SaveChangesAsync();
@@ -58,7 +58,7 @@ namespace E_Commerce.Services
             {
                 ProductID = dto.ProductID,
                 ProductName = dto.ProductName,
-                ProductDescription = dto.ProductDescription
+                ProductDescription = dto.Description
             };
             _context.Products.Update(product);
             var raw=await _context.SaveChangesAsync();
